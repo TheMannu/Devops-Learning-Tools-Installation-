@@ -1,0 +1,56 @@
+    1  ls 
+    2  vi first
+    3  vi first 
+    4  cat first 
+    5  vi shell.sh
+    6  cat shell.sh 
+    7  ls
+    8  ./shell.sh
+    9  ls -lrt
+   10  chmod +x shell.sh
+   11  ls -lrt
+   12  ./shell.sh
+   13  clear
+   14  ssh-keygen
+   15  cd /root/.ssh/
+   16  ls
+   17  cat id_rsa.pub
+   18  ls
+   19  cat id_rsa
+   20  ls
+   21  cd /
+   22  cd ~
+   23  ls
+   24  touch hari
+   25  ls
+   26  touch abc.sh
+   27  ls
+   28  mkdir subh
+   29  ls
+   30  ls -l
+   31  chmod 777 hari
+   32  ls -l
+   33  ./abc.sh
+   34  chmod +x abc.sh
+   35  ls =l
+   36  ls -l
+   37  ./abc.sh
+   38  ifconfig
+   39  apt install net-tools
+   40  ifconfig
+   41  ping google.com
+   42  ss
+   43  dig google.com
+   44  hostname
+   45  mtrmtr
+   46  mtr
+   47  whois amazon
+   48  apt install whois
+   49  whois amazon.com
+   50  ifplugstatus
+   51  apt install ifplugd
+   52  apt-get update
+   53  apt install ifplugd
+   54  ifplugstatus
+   55  hitory
+   56  history
