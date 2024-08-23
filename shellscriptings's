@@ -1,0 +1,240 @@
+#! /bin/bash     commnet 
+touch komal
+df
+free
+cat komal
+uptime
+
+
+first.sh
+
+777    not good ans
+755     ok
+700    best 
+chmod +x first.sh     bets of best
+
+
+./     sh
+
+
+----------
+#!/bin/bash  
+echo "This is my first shell script"  
+ls
+echo "I am done running ls command"  
+SOMEVAR='text stuff adding here'  
+echo "$SOMEVAR"
+echo "$SOMEVAR"
+
+--------------
+
+#!/bin/bash 
+echo "Hello there"
+echo "My name is $(whoami)"
+echo "Nice to meet you"
+
+---------------
+
+monitoring 
+
+
+#!/bin/bash  
+echo "This is a shell script"
+echo "the hostname of this machine is "
+hostname 
+hostname -i
+ps
+echo "memory used in the machine "
+free
+echo "disk used in the machine "
+df -h
+echo "the above information from the machine"  
+
+
+-------------
+
+#!/bin/bash
+
+# Add two numeric value
+((sum=10*5))
+BODMAS
+#Print the result
+echo $sum
+
+
+-------------
+
+#!/bin/bash
+echo "Enter Your name"
+read name
+echo "Welcome $name to Linux Learning session"
+
+
+---------
+Ashwini 
+
+#!/bin/bash
+    date > info
+    who >> info
+    ps aux >> info
+
+
+---------
+
+#!/bin/bash
+echo "Current date and time: $(date)"
+date
+echo "Currently logged-in users:"
+Who
+echo "Running processes:"
+ps -e
+>> info
+
+--------
+
+#!/bin/bash
+
+# Define the output file
+output_file="info"
+
+# Write the current time and date to the file
+echo "Current Time and Date:" > "$output_file"
+date >> "$output_file"
+
+# Add a separator
+echo -e "\nList of Logged-in Users:" >> "$output_file"
+who >> "$output_file"
+
+# Add a separator
+echo -e "\nRunning Processes:" >> "$output_file"
+ps aux >> "$output_file"
+
+# Notify the user
+echo "Information has been written to $output_file"
+
+
+
+
+
+-----------------------
+
+
+#!/bin/bash 
+echo "Current Date & time is $(date)" > info
+echo "Current user logged in is $(whoami)" >> info
+echo "Current running process is $(ps)" >> info
+
+
+
+
+----------
+
+
+#!/bin/bash
+# Write a shell script to display the process running on the system for every
+# 30 seconds, but only for 3 times.
+# -------------------------------------------------------------------------
+# -------------------------------------------------------------------------
+# 
+# for loop 3 times
+for r in 1 2 3
+do
+	#see every process on the system
+	echo "**************************** x^x^x ****************************"
+	cd /tmp/
+	rm *
+	echo "**************************** x^x^x ****************************"
+	#sleep for 30 seconds
+	sleep 180*3600
+        # clean
+done
+
+
+------------
+
+Variables
+
+
+NAME="John"
+echo $NAME
+echo "$NAME"     
+echo "${NAME}!"
+
+
+echo 'Hi $NAME '  
+
+-------
+
+Shell execution
+echo "I'm in $(pwd)"
+echo "I'm in 'pwd'"
+
+
+--------
+
+git commit && git push                  
+git commit || echo
+-------------
+
+Functions
+get_name()
+
+------------
+
+#!/bin/bash
+
+# Sample script written for Part 4 of the RHCE series
+# This script will return the following set of system information:
+# -Hostname information:
+echo -e "\e[31;43m***** HOSTNAME INFORMATION *****\e[0m"
+hostnamectl
+echo ""
+# -File system disk space usage:
+echo -e "\e[31;43m***** FILE SYSTEM DISK SPACE USAGE *****\e[0m"
+df -h
+echo ""
+# -Free and used memory in the system:
+echo -e "\e[31;43m ***** FREE AND USED MEMORY *****\e[0m"
+free
+echo ""
+# -System uptime and load:
+echo -e "\e[31;43m***** SYSTEM UPTIME AND LOAD *****\e[0m"
+uptime
+echo ""
+# -Logged-in users:
+echo -e "\e[31;43m***** CURRENTLY LOGGED-IN USERS *****\e[0m"
+who
+echo ""
+# -Top 5 processes as far as memory usage is concerned
+echo -e "\e[31;43m***** TOP 5 MEMORY-CONSUMING PROCESSES *****\e[0m"
+ps -eo %mem,%cpu,comm --sort=-%mem | head -n 6
+echo ""
+echo -e "\e[1;32mDone.\e[0m"
+
+
+RealTime usecase ?
+
+Automation - Monitoring , Moving log file , backup , clean , send file , 
+Schedule , Cron jenkins 
+Package update , apt update 
+
+
+10 s/w install
+
+
+--------
+Python
+Moving log file s3  --   mv , scp , Key   ssh-copy rsa 10.22
+
+------------
+
+grep 
+
+find the running ps which is related to java ?
+
+ps | grep java    Correct    
+
+ps -aef | grep java    desired output 
+
+
+  
