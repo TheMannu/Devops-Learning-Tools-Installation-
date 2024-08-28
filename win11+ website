@@ -27,5 +27,12 @@ Step 6 :- Go to IP address:80 and verify
 ------ 
 Win11   - 1-2 hr's -   
 
+install docker 
+		sudo -i
+
+		apt-get update -y
+		apt install docker.io
+		docker -v
+
 
 docker run -d --restart unless-stopped --name win11react -p   3000:3000 blueedge/win11react:latest
