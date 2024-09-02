@@ -1,0 +1,31 @@
+**Installing Python an₫ boto3 for aws automation**
+
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+
+sudo apt install python3.10  -> install python3
+
+sudo apt install python3-pip -> Install pip (Python package installer)
+
+python3.10 --version        -> Verify the installation
+
+pip3 --version              -> Verify the installation
+
+pip3 install boto3          -> Install boto3 using pip
+
+python3.10 -m pip show boto3 -> Verify the installation
+
+  ->  Create a Python script (e.g., create_s3_bucket.py):
+            import boto3
+
+            s3 = boto3.client('s3')   # Create an S3 client
+
+            bucket_name = 'my-new-bucket'    # Create a bucket
+            s3.create_bucket(Bucket=bucket_name)
+
+            print(f"Bucket {bucket_name} created successfully.")
+
+      python3.10 create_s3_bucket.py   -> Run the script
+
