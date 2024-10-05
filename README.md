@@ -1,2 +1,1 @@
-# Batch-35
-here we will share all Code 
+This repository contains information how to install the tool for devops
